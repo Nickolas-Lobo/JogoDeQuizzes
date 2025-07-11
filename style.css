@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #002030;
+    --color-2: #00445c;
+    --color-3: #007394;
+    --color-4: #00b0d5;
+    --color-5: #00faff;
+    --color-6: #caffff;
+    --color-7: #FFFFFF;
+}
+
+#cabecalho {
+    height: 10vh;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabecalho img {
+    width: 50px;
+    height: 40px;
+}
+
+#cabecalho h1 {
+    color: var(--color-5);
+}
+
+#conteudo,
+#quiz {
+    width: 100%;
+    min-height: 80vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-4);
+    padding: 20px;
+}
+
+#inicio {
+    color: var(--color-1);
+    text-align: center;
+    margin: 30px 0;
+}
+
+#cardsTotais {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 65vh;
+    gap: 30px;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    background-color: var(--color-6);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 20px;
+    color: var(--color-1);
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.cardButtons {
+    margin-top: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .cardButtons {
+    opacity: 1;
+}
+
+.cardButtons button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-3);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cardButtons button:hover {
+    background-color: var(--color-2);
+}
+
+#cardsSup,
+#cardsSub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#quiz {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: var(--color-4);
+}
+
+#pergunta {
+    font-size: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.opcao {
+    padding: 30px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--color-3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.opcao:hover {
+    background-color: var(--color-2);
+}
+
+.botao-reiniciar {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: var(--color-2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-reiniciar:hover {
+    background-color: var(--color-1);
+}
+
+#footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+#footer p{
+    color: var(--color-7);
+}

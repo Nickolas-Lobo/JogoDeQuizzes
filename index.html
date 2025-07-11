@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <img src="imagens/logoSemFundo.png" id="logo" alt="logo QuizHub">
+        <h1>QuizHub</h1>
+    </header>
+
+    <main id="conteudo">
+        <div id="inicio">
+            <h1>Bem-vindo ao QuizHub!</h1>
+            <p>Escolha um dos temas abaixo para iniciar o jogo:</p>
+        </div>
+
+        <div id="cardsTotais">
+            <div class="cards" id="cardsSup">
+                <div class="card">
+                    <img src="imagens/matematica.png" alt="icone matematica">
+                    <p>Matemática</p>
+                    <div class="cardButtons">
+                        <button onclick="iniciarQuiz('matematica')">Entrar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/esporte.png" alt="icone esporte">
+                    <p>Esporte</p>
+                    <div class="cardButtons">
+                        <button onclick="iniciarQuiz('esporte')">Entrar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/academia.png" alt="icone academia">
+                    <p>Academia</p>
+                    <div class="cardButtons">
+                        <button onclick="iniciarQuiz('academia')">Entrar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="cardsSub">
+                <div class="card">
+                    <img src="imagens/pipoca.png" alt="icone de filmes">
+                    <p>Filmes</p>
+                    <div class="cardButtons">
+                        <button onclick="iniciarQuiz('filmes')">Entrar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/series.png" alt="icone de séries">
+                    <p>Séries</p>
+                    <div class="cardButtons">
+                        <button onclick="iniciarQuiz('series')">Entrar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/livro-de-historia.png" alt="icone de historia">
+                    <p>História</p>
+                    <div class="cardButtons">
+                        <button onclick="iniciarQuiz('historia')">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="quiz">
+        <h2 id="pergunta"></h2>
+        <div id="opcoes"></div>
+    </div>
+
+    <footer id="footer">
+        <p>Desenvolvido por:</p>
+        <p>Mateus Henrique e Nickolas Lobo</p>
+        <p>&copy;2025</p>
+    </footer>
+
+</body>
+
+</html>
